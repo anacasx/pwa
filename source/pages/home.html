@@ -1,43 +1,50 @@
-<div data-ui-load="@lib/controllers/view_pager"
-      data-ui-options="options.viewPager"
-      class="feed-pager"
-      draggable="false">
+<div data-ui-load="@lib/controllers/view_pager" data-ui-options="options.viewPager" class="feed-pager"
+    draggable="false">
 
-    <!-- TOP STORIES -->
+    <!-- INICIO -->
     <section class="content" data-ui-load="@lib/controllers/header_auto_hide" data-ui-options="options.autoHidingBars">
 
-        <div data-ui-load="pages/home/items_list"
-             data-o-rss="_data/news-main.rss.xml"></div>
+        <div data-ui-load="pages/home/items_list" data-o-rss="_data/inicio.xml"></div>
 
     </section>
 
-    <!-- WORLD -->
+    <!-- CONOCENOS -->
     <section class="content" data-ui-load="@lib/controllers/header_auto_hide" data-ui-options="options.autoHidingBars">
 
-        <div data-ui-load="pages/home/items_list"
-             data-o-rss="_data/news-world.rss.xml"></div>
+        <div data-ui-load="pages/home/items_list" data-o-rss="_data/conocenos.xml"></div>
 
     </section>
 
-    <!-- EUROPE -->
+    <!-- GENERALIDADES -->
     <section class="content" data-ui-load="@lib/controllers/header_auto_hide" data-ui-options="options.autoHidingBars">
 
-        <div data-ui-load="pages/home/items_list"
-             data-o-rss="_data/news-europe.rss.xml"></div>
+        <div data-ui-load="pages/home/items_list" data-o-rss="_data/generalidades.xml"></div>
 
     </section>
 
-    <!-- TRAVEL -->
+    <!-- SERVICIOS -->
     <section class="content" data-ui-load="@lib/controllers/header_auto_hide" data-ui-options="options.autoHidingBars">
 
-        <div data-ui-load="pages/home/items_list"
-             data-o-rss="_data/news-travel.rss.xml"></div>
+        <div data-ui-load="pages/home/items_list" data-o-rss="_data/servicios.xml"></div>
+
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="content" data-ui-load="@lib/controllers/header_auto_hide" data-ui-options="options.autoHidingBars">
+
+        <div data-ui-load="pages/home/items_list" data-o-rss="_data/productos.xml"></div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="content" data-ui-load="@lib/controllers/header_auto_hide" data-ui-options="options.autoHidingBars">
+
+        <div data-ui-load="pages/home/items_list" data-o-rss="_data/contacto.xml"></div>
 
     </section>
 
 </div>
-<div data-ui-load="@lib/components/context_menu"
-     data-ui-context="news-options-menu">
+<div data-ui-load="@lib/components/context_menu" data-ui-context="news-options-menu">
     <div data-ui-field="menu">
         <button layout="row center-left">
             <i class="material-icons">bookmark_border</i>
